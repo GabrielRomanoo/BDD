@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 public class LeilaoTest {
@@ -19,7 +18,7 @@ public class LeilaoTest {
         BigDecimal doisMil = new BigDecimal("2000.0");
 
         @Nested
-        @DisplayName("Quando propoe o lance")
+        @DisplayName("Quando propoe ao leilao")
         class AssertLanceNormal {
 
             @Test
@@ -33,7 +32,7 @@ public class LeilaoTest {
             }
         }
     }
-	
+    
 	@Test
     public void naoDeveAceitarUmLanceIgualAoAnterior() {
         Leilao leilao = new Leilao("Macbook Pro 15");
